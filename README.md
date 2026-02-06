@@ -28,7 +28,8 @@ In this assignment, I implemented a standard ERC-20 token.
 ### Week 3: Student Registry Contract
 Based on the Week 3 Instructions, this contract manages student records for a university.
 * **Administrator Access:** Implemented access control so only administrators can add or update student data.
-* **Record Management:** * Add new student profiles.
+* **Record Management:**
+    * Add new student profiles.
     * Update existing student status.
     * Retrieve student information via public getter functions.
 * **Logic:** Utilizes `struct` to define student data and `mapping` for efficient record lookup.
