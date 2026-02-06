@@ -43,6 +43,6 @@ This repository contains my homework assignments for the **IS6200** course at th
 5. Use the terminal buttons to interact with the contract functions.
 
 ---
-**Author:** Cicerone
+**Author:** Cicerone  
 **Institution:** City University of Hong Kong (CityU)  
 **Term:** Spring 2026
