@@ -6,7 +6,7 @@ This repository contains my homework assignments for the **IS6200** course at th
 - **IDE:** [Remix Online IDE](https://remix.ethereum.org/)
 - **Language:** Solidity (0.8.0)
 - **Compiler:** Default Remix Compiler
-- **Network:** Remix VM (Cancun)
+- **Network:** Remix VM (Osaka)
 
 ## 📂 Coursework Progress
 
