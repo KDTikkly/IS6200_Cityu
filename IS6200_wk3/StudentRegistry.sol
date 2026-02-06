@@ -1,7 +1,3 @@
-/**
- * Name: LIN HAOYUAN
- * Student ID: 72645104
- */
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
