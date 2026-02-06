@@ -3,7 +3,7 @@
 This repository contains my homework assignments for the **IS6200** course at the City University of Hong Kong. All contracts are developed and tested using the **Remix IDE**.
 
 ## 🛠 Development Environment
-- **IDE:** [Remix Online IDE](https://remix.ethereum.org/)
+- **IDE:** [Remix Online IDE](https://remix.ethereum.org/) or VScode
 - **Language:** Solidity (0.8.0)
 - **Compiler:** Default Remix Compiler
 - **Network:** Remix VM (Osaka)
@@ -21,14 +21,14 @@ This repository contains my homework assignments for the **IS6200** course at th
 ## 📝 Assignment Details
 
 ### [Week 2] Simple Storage Contract
-**File:** `Week_02/Storage.sol`
+**File:** `IS6200_wk2/Storage.sol`
 * **Purpose:** Demonstrates the basics of state variables and function visibility (`public`, `view`).
 * **Functions:**
     * `store(uint256 num)`: Updates the state variable with a new number.
     * `retrieve()`: Returns the current stored value without consuming gas (view function).
 
 ### [Week 3] Student Registry Contract
-**File:** `Week_03/StudentRegistry.sol`
+**File:** `IS6200_wk3/StudentRegistry.sol`
 * **Purpose:** Manages university student records (Add, Update, Retrieve).
 * **Key Features:**
     * **Administrative Control:** Only authorized addresses can modify data.
