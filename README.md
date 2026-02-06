@@ -1,50 +1,48 @@
 # IS6200: Smart Contract Development (CityU)
 
-This repository serves as a portfolio of my smart contract development work for the **IS6200** course at the City University of Hong Kong. All assignments are developed, compiled, and tested using the **Remix IDE**.
+This repository contains my homework assignments for the **IS6200** course at the City University of Hong Kong. All contracts are developed and tested using the **Remix IDE**.
 
 ## 🛠 Development Environment
-* **IDE:** [Remix Online IDE](https://remix.ethereum.org/)
-* **Language:** Solidity (^0.8.0)
-* **Compiler:** Remix In-browser Compiler
-* **Test Network:** Remix VM (Cancun) / Sepolia Testnet
+- **IDE:** [Remix Online IDE](https://remix.ethereum.org/)
+- **Language:** Solidity (^0.8.0)
+- **Compiler:** Default Remix Compiler
+- **Network:** Remix VM (Cancun)
 
 ## 📂 Coursework Progress
 
 | Week | Project Name | Description | Status |
 | :--- | :--- | :--- | :--- |
-| **Week 1** | Setup | Initial environment configuration and tool installation. | Completed |
-| **Week 2** | **ERC-20 Token** | Developed a standard fungible token contract featuring minting and transfer logic. | Completed |
-| **Week 3** | **Student Registry** | A contract to manage university student records with administrative controls. | Completed |
+| **Week 1** | Setup | Initial environment configuration. | ✅ Done |
+| **Week 2** | **Simple Storage** | A basic contract to store and retrieve a `uint256` value on the blockchain. | ✅ Done |
+| **Week 3** | **Student Registry** | A contract for managing university student records with admin update capabilities. | ✅ Done |
 
 ---
 
-## 📝 Assignment Overviews
+## 📝 Assignment Details
 
-### Week 2: ERC-20 Smart Contract
-In this assignment, I implemented a standard ERC-20 token.
-* **Functionality:** Tracking balances, managing total supply, and enabling secure transfers between addresses.
-* **Objective:** Understanding the EIP-20 standard and mapping-based data structures in Solidity.
+### [Week 2] Simple Storage Contract
+**File:** `Week_02/Storage.sol`
+* **Purpose:** Demonstrates the basics of state variables and function visibility (`public`, `view`).
+* **Functions:**
+    * `store(uint256 num)`: Updates the state variable with a new number.
+    * `retrieve()`: Returns the current stored value without consuming gas (view function).
 
-### Week 3: Student Registry Contract
-Based on the Week 3 Instructions, this contract manages student records for a university.
-* **Administrator Access:** Implemented access control so only administrators can add or update student data.
-* **Record Management:**
-    * Add new student profiles.
-    * Update existing student status.
-    * Retrieve student information via public getter functions.
-* **Logic:** Utilizes `struct` to define student data and `mapping` for efficient record lookup.
+### [Week 3] Student Registry Contract
+**File:** `Week_03/StudentRegistry.sol`
+* **Purpose:** Manages university student records (Add, Update, Retrieve).
+* **Key Features:**
+    * **Administrative Control:** Only authorized addresses can modify data.
+    * **Data Structures:** Uses `struct` to group student attributes and `mapping` for efficient ID-based lookups.
+    * **Functions:** Ability to add new students, update their enrollment status, and fetch details by ID.
 
-## 🚀 How to Run
-1.  Open [Remix IDE](https://remix.ethereum.org/).
-2.  Import the `.sol` files from the `/contracts` folder of this repository.
-3.  Navigate to the **Solidity Compiler** tab and click **Compile**.
-4.  Go to **Deploy & Run Transactions**, select **Remix VM**, and click **Deploy**.
-5.  Interact with the contract using the deployed contract UI.
-
-## ⚖️ Disclaimer
-This repository is for educational purposes. Students currently enrolled in IS6200 should refer to the City University of Hong Kong's academic integrity policy before referencing this material.
+## 🚀 How to Deploy (Remix)
+1. Open [Remix IDE](https://remix.ethereum.org/).
+2. Create a new file (e.g., `StudentRegistry.sol`) and paste the code from this repo.
+3. In the **Solidity Compiler** tab, click **Compile**.
+4. In the **Deploy & Run Transactions** tab, select **Remix VM** and click **Deploy**.
+5. Use the terminal buttons to interact with the contract functions.
 
 ---
-**Author:** Cicerone  
+**Author:** Cicerone
 **Institution:** City University of Hong Kong (CityU)  
 **Term:** Spring 2026
